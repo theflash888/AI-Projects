@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicles">
+        <item>Full Size Pickup</item>
+        <item>Mid-Size Pickup</item>
+        <item>Full-Size SUV</item>
+        <item>Smaller SUV/CUV</item>
+        <item>Hatchback</item>
+        <item>Minivan</item>
+        <item>Mid-size Car</item>
+        <item>Compact Car</item>
+    </string-array>
+
+    <string-array name="units">
+        <item>¢/L</item>
+        <item>$/US Gal</item>
+    </string-array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_directions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.devin.mobiledevicesproject.Directions"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/starting_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startingPt"
+        android:textStyle="normal|bold" />
+
+    <fragment
+        android:id="@+id/fromSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+
+    <TextView
+        android:text="@string/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destPt"
+        android:textStyle="normal|bold" />
+
+    <fragment
+        android:id="@+id/toSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"/>
+
+    <TextView
+        android:text="@string/vehicle_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleClass"
+        android:textStyle="normal|bold" />
+
+    <Spinner
+        android:id="@+id/vClass"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:entries="@array/vehicles"/>
+
+    <TextView
+        android:text="@string/label_price_of_gas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceLbl"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="@string/disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblDisclaimer" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/priceOfGas"
+        android:hint="@string/price_of_gas" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/units"
+        android:entries="@array/units"/>
+
+    <Button
+        android:text="@string/get_directions"
+        android:backgroundTint="@color/colorProceed"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGetDirections"
+        android:enabled="false"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="getDirections"/>
+
+</LinearLayout>

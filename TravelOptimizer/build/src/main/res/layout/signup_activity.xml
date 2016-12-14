@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/signupActivityPadding">
+
+        <EditText android:id="@+id/editUserFirstName"
+            android:layout_width="@dimen/editUserName"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/editUserFirstName"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/editUserLastName"/>
+
+        <EditText android:id="@+id/editUserLastName"
+            android:layout_width="@dimen/editUserName"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/editUserLastName"
+            android:inputType="textPersonName"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/editUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserLastName"
+            android:layout_marginTop="@dimen/editBetween"
+            android:hint="@string/editUserEmail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/editUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserEmail"
+            android:layout_marginTop="@dimen/editBetween"
+            android:hint="@string/editUserPassword"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/editUserPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserPassword"
+            android:layout_marginTop="@dimen/editBetween"
+            android:hint="@string/editUserPasswordConfirm"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/editUserBirthdateDay"
+            android:layout_width="@dimen/editUserBirthdateDay"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserPasswordConfirm"
+            android:layout_marginTop="@dimen/editBetween"
+            android:hint="@string/editUserBirthdateDay"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/editUserBirthdateMonth"/>
+
+        <EditText android:id="@+id/editUserBirthdateMonth"
+            android:layout_width="@dimen/editUserBirthdateMonth"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserPasswordConfirm"
+            android:layout_toEndOf="@id/editUserBirthdateDay"
+            android:layout_marginTop="@dimen/editBetween"
+            android:hint="@string/editUserBirthdateMonth"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/editUserBirthdateYear"/>
+
+        <EditText android:id="@+id/editUserBirthdateYear"
+            android:layout_width="@dimen/editUserBirthdateYear"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserPasswordConfirm"
+            android:layout_toEndOf="@id/editUserBirthdateMonth"
+            android:layout_marginTop="@dimen/editBetween"
+            android:hint="@string/editUserBirthdateYear"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="4"
+            android:maxLines="1"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="9"
+            android:layout_below="@+id/editUserBirthdateDay"
+            android:layout_alignParentStart="true"
+            android:id="@+id/lGrade"
+            android:hint="@string/license_class"
+            android:maxLength="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="9"
+            android:layout_below="@+id/editUserBirthdateYear"
+            android:layout_toEndOf="@+id/lGrade"
+            android:id="@+id/gender"
+            android:hint="@string/gender_m_f"
+            android:maxLength="1"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+
+        <Button android:id="@+id/btnLoginCancel"
+            android:layout_width="@dimen/btnMedSize"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/btnMargin"
+            android:text="@string/btnCancel"
+            android:onClick="cancel"/>
+
+        <Button android:id="@+id/btnLoginConfirm"
+            android:layout_width="@dimen/btnMedSize"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/btnMargin"
+            android:text="@string/btnConfirm"
+            android:onClick="confirm"/>
+    </RelativeLayout>
+</LinearLayout>

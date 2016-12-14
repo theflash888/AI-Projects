@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">MobileDevicesProject</string>
+
+    <!-- General strings -->
+    <string name="btnCancel">Cancel</string>
+    <string name="btnConfirm">Confirm</string>
+
+    <!-- SignupActivity strings -->
+    <!-- EditText hints -->
+    <string name="editUserFirstName">Enter first name</string>
+    <string name="editUserLastName">Enter last name</string>
+    <string name="editUserEmail">Enter e-mail (required)</string>
+    <string name="editUserPassword">Enter password (required)</string>
+    <string name="editUserPasswordConfirm">Confirm password (required)</string>
+    <string name="editUserBirthdateDay">DD</string>
+    <string name="editUserBirthdateMonth">MM</string>
+    <string name="editUserBirthdateYear">YYYY</string>
+    <!-- Error messages -->
+    <string name="errorEmail">Email invalid</string>
+    <string name="errorEmailTaken">Email is already in use</string>
+    <string name="errorPasswordInvalid">Password must be atlease 8 characters long and must contain atleast 1 lowercase alphanumeric character, 1 uppercase alphanumeric character, and 1 number</string>
+    <string name="errorMatchingPassword">Password does not match</string>
+    <string name="errorBirthdateDay">Must contain only digits</string>
+    <string name="errorBirthdateMonth">Must contain only digits</string>
+    <string name="errorBirthdateYear">Invalid birth year</string>
+    <string name="errorLicenseClass">Invalid license class</string>
+    <string name="errorGender">Invalid gender</string>
+
+    <!-- LoginActivity strings -->
+    <string name="editLoginEmail">Enter your e-mail</string>
+    <string name="editLoginPassword">Enter your password</string>
+    <string name="disclaimer_login">NOTE: To get live gas price updates, please go to http://gasbuddy.com/ and allow them access to your location, otherwise the gas prices in this app will be defaulted to 0 cents/L</string>
+
+    <string name="btnLogin">Login</string>
+    <string name="btnSignup">Signup</string>
+
+    <string name="errorEmailPasswordInvalid">Email or password invalid</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Map Activity -->
+    <string name="find_routes">Plan Route</string>
+
+    <!-- Directions Activity -->
+    <string name="get_directions">Get Directions</string>
+    <string name="price_of_gas">Price of Gas</string>
+    <string name="disclaimer">Based on most recent cheapest price at your location, you may enter your own if you like.</string>
+    <string name="label_price_of_gas">Price of Gas</string>
+    <string name="starting_point">Starting Point</string>
+    <string name="destination">Destination</string>
+    <string name="vehicle_class">Vehicle Class (select one)</string>
+    <string name="no_trip_planned_0_00">No Trip Planned ($0.00)</string>
+    <string name="_0_km">0 km</string>
+    <string name="direction_title">Get Directions</string>
+    <string name="license_class">License Class</string>
+    <string name="gender_m_f">Gender (M/F)</string>
+    <string name="gas_prices">Gas Prices...</string>
+    <string name="weather_report">Weather Report</string>
+</resources>
