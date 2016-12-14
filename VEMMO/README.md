@@ -32,8 +32,8 @@ Figure 3: Algorithms have been extended to recognize when the vehicle is on the 
 <img src="working_red_light (1).png" width="500" height="500"><br>
 Figure 4: Algorithms have further expanded to understand the difference in colours when it comes to the traffic lights. This can be leveraged to anticipate the change in lights to make aware about the appropriate times to go, slow down and stop.
 
-<img src="Mobile Screenshot 3.png" width="500" height="500"><br>
-<img src="Mobile Screenshot 1.png" width="500" height="500"><br>
+<img src="Mobile Screenshot 3.png" width="500" height="800"><br>
+<img src="Mobile Screenshot 1.png" width="500" height="800"><br>
 Figure 5: The interfacing mobile and web platform which reads the outputs from Firebase and visualizes the situation on a Google Maps platform while taking into account the speed of the vehicle. 
 
 
