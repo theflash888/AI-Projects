@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CapstoneAndroidApp</string>
+
+    <string name="location_permission_snackbar">Location Permission is Required</string>
+    <string name="grant_permission">GRANT</string>
+    <string name="app_closing_permission">Required Permission Denied! App Closing</string>
+    <string name="kph">Kph</string>
+    <string name="mph">Mph</string>
+    <string name="sample_speed">100</string>
+    <string name="stop">Stop</string>
+    <string name="red_light">Red Light</string>
+    <string name="amber_light">Amber Light</string>
+    <string name="green_light">Green Light</string>
+    <string name="meters">m</string>
+</resources>

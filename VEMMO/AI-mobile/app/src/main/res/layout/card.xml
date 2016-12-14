@@ -1,0 +1,47 @@
+<android.support.v7.widget.CardView android:id="@+id/card"
+    android:layout_gravity="bottom|start"
+    android:layout_marginBottom="48dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_margin="5dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/card_message"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/card_distance"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

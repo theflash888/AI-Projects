@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/speedometer"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_gravity="bottom|end"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:backgroundTint="@android:color/white"
+        android:src="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/speed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:text="@string/sample_speed"
+        android:textSize="30sp"
+        android:elevation="16dp"
+        android:textColor="@android:color/primary_text_light" />
+    <TextView
+        android:id="@+id/speed_units"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:textSize="20sp"
+        android:text="@string/kph"
+        android:elevation="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content" />
+</FrameLayout>
